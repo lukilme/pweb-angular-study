@@ -3,6 +3,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    h2{
+        padding:5px;
+    }
+
 }
 
 .bulb{
