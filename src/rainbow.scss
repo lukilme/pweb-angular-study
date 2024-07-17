@@ -1,0 +1,45 @@
+@keyframes rainbow {
+    0% {
+        color: rgb(250, 37, 37);
+    }
+
+    15% {
+        color: rgb(243, 173, 42);
+    }
+
+    30% {
+        color: rgb(231, 205, 38);
+    }
+
+    45% {
+        color: rgb(97, 230, 97);
+    }
+
+    55% {
+        color: rgb(60, 60, 227);
+    }
+
+    70% {
+        color: rgb(122, 50, 174);
+    }
+
+    85% {
+        color: rgb(234, 170, 234);
+    }
+
+    100% {
+        color: rgb(218, 60, 60);
+    }
+}
+
+
+.gay-letter {
+    display: inline-block;
+    animation: rainbow 0.5s none infinite;
+}
+
+@for $i from 1 through 10 {
+    .gay-letter:nth-child(#{$i}n + 1) {
+        animation-delay: #{($i - 1) * 0.1}s;
+    }
+}
