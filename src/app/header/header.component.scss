@@ -2,12 +2,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     z-index: 50;
     width: 100%;
+    margin:0;
+    padding:0;
+}
+
+#portfolio{
+    text-decoration: none;     
+    font-size: 20px;
+    cursor: pointer;
     
 }
 
 .bulb{
-    font-size: 40px;
+    font-size: 20px;
+}
+
+.start-spinning{
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
