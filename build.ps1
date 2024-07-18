@@ -32,7 +32,7 @@ if ($resposta -eq "y") {
 
     ng build --output-path docs --base-href /pweb-angular-study/
     $sourceFolder = "C:\Users\Desktop\Desktop\lukilme\college\pweb-angular\docs\browser"
-    $destinationFolder = "C:\Users\Desktop\Desktop\lukilme\college\pweb-angular\dist"
+    $destinationFolder = "C:\Users\Desktop\Desktop\lukilme\college\pweb-angular\docs"
 
     if (!(Test-Path $sourceFolder)) {
         Write-Host "A pasta de origem '$sourceFolder' não existe."
