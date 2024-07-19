@@ -1,0 +1,11 @@
+.custom-tab-border .mdc-tab {
+    border: 2px solid red; /* Cor e espessura da borda */
+  }
+  
+  .custom-tab-border .mdc-tab.mdc-tab--active {
+    border-color: blue; /* Cor da borda quando a aba está ativa */
+  }
+
+div .mat-mdc-tab-label-container{
+    border:0px;
+}
