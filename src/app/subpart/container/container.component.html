@@ -1,12 +1,11 @@
-<mat-tab-group id="container" class="custom-tab-border" >
-    <mat-tab label="First">
-      <app-entity1></app-entity1>
-    </mat-tab>
-    <mat-tab label="Second">
-      <app-entity2></app-entity2>
-    </mat-tab>
-    <mat-tab label="Third">
-      <app-entity3></app-entity3>
-    </mat-tab>
-  </mat-tab-group>
-  
+<mat-tab-group id="container" [disableRipple]=true class="custom-tab-border">
+  <mat-tab label="First" class="my-mat-tab">
+    <app-entity1></app-entity1>
+  </mat-tab>
+  <mat-tab label="Second">
+    <app-entity2></app-entity2>
+  </mat-tab>
+  <mat-tab label="Third">
+    <app-entity3></app-entity3>
+  </mat-tab>
+</mat-tab-group>

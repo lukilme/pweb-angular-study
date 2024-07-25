@@ -1,11 +1,25 @@
+/*
 .custom-tab-border .mdc-tab {
-    border: 2px solid red; /* Cor e espessura da borda */
-  }
-  
-  .custom-tab-border .mdc-tab.mdc-tab--active {
-    border-color: blue; /* Cor da borda quando a aba está ativa */
-  }
+  border: 2px solid red; 
+} */
 
 div .mat-mdc-tab-label-container{
-    border:0px;
+  border:0px;
 }
+.custom-tab-border > .mdc-tab.mdc-tab--active {
+  border-bottom: 2px solid rgb(94, 255, 0); /* Cor da borda quando a aba está ativa */
+}
+
+
+.mdc-tab-indicator--active{
+  border-color:yellow !important;
+}
+.mdc-tab--active{
+  border-color: yellow;
+}
+/** 
+mdc-tab mat-mdc-tab mat-mdc-focus-indicator mdc-tab--active mdc-tab-indicator--active
+*/
+/**
+mdc-tab mat-mdc-tab mat-mdc-focus-indicator
+*/

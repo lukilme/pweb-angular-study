@@ -1,8 +1,30 @@
+
+.dark-theme #container{
+  background-color: white;
+  color: #151515;
+}
 #container{
     max-width: 900px;
-    margin:auto;
-    background-color: rgb(19, 19, 19);
+    margin: auto;
+    background-color: #151515;
     color:white;
- 
+    transition: background-color 0.5s;
+}
+.mat-mdc-tab .mdc-tab__text-label{
+  color:white !important;
+}
+.dark-theme .mat-mdc-tab .mdc-tab__text-label{
+  color:#151515 !important;
+}
+.my-mat-tab {
+  background-color: lightblue; 
+  color: #151515; 
 }
 
+
+.dark-theme .mat-mdc-tab .mdc-tab-indicator__content--underline {
+    border-color: #151515 !important;
+}
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+  border-color: #fefefe !important;
+}
