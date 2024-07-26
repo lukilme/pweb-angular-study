@@ -12,7 +12,7 @@ import { ContainerComponent } from "./subpart/container/container.component";
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomeComponent
     
   ],
   imports: [

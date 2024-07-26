@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { WasmService } from '../../wasm.service';
 
 @Component({
   selector: 'app-entity1',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './entity1.component.scss',
   standalone: true
 })
-export class Entity1Component {
+export class Entity1Component implements OnInit {
+  result: number = 0;
 
+  constructor(private wasmService: WasmService) {}
+
+  async ngOnInit() {
+    this.result = await this.wasmService.add(2, 3);
+  }
 }

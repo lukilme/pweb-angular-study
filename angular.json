@@ -36,7 +36,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/wasm",
+                "output": "/assets/wasm"
               }
             ],
             "styles": [
@@ -96,7 +102,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "public"
+              },{
+                "glob": "**/*",
+                "input": "./src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
