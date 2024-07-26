@@ -52,6 +52,13 @@ if ($resposta -eq "y") {
         Write-Host "Erro ao copiar arquivos. Verifique os caminhos e permissões."
         exit
     }
+    try {
+        Copy-Item -Path "C:\Users\Desktop\Desktop\lukilme\college\pweb-angular\src\assets"\* -Destination $destinationFolder -Force
+        Write-Host "Arquivos copiados com sucesso de '$sourceFolder' para '$destinationFolder'."
+    } catch {
+        Write-Host "Erro ao copiar arquivos. Verifique os caminhos e permissões."
+        exit
+    }
 
  
     try {
