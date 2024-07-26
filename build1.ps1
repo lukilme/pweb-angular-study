@@ -29,7 +29,6 @@ if ($resposta -eq "y") {
         exit
     }
 
-
     ng build --output-path docs --base-href /pweb-angular-study/
     $sourceFolder = "C:\Users\Desktop\Desktop\lukilme\college\pweb-angular\docs\browser"
     $destinationFolder = "C:\Users\Desktop\Desktop\lukilme\college\pweb-angular\docs"
@@ -38,7 +37,6 @@ if ($resposta -eq "y") {
         Write-Host "A pasta de origem '$sourceFolder' não existe."
         exit
     }
-
     
     if (!(Test-Path $destinationFolder)) {
         New-Item -ItemType Directory -Path $destinationFolder
@@ -62,13 +60,7 @@ if ($resposta -eq "y") {
         exit
     }
 
-    try {
-        ngh --dir=docs
-        Write-Host "Publicação no GitHub Pages realizada com sucesso."
-    } catch {
-        Write-Host "Erro ao publicar no GitHub Pages. Verifique as configurações e tente novamente."
-        exit
-    }
+    
 
 } elseif ($resposta -eq "n") {
     git reset --soft HEAD^
